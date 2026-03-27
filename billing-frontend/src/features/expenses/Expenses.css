@@ -772,7 +772,7 @@
   }
 
   /* Global Fix for Modal Stacking Context */
-  :global(body.modal-open) .page-container > div {
+  body.modal-open .page-container > div {
     transform: none !important;
   }
 
