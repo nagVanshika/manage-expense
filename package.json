@@ -2,7 +2,7 @@
   "name": "carmaa-billing-root",
   "private": true,
   "scripts": {
-    "build": "cd billing-frontend && npm install && npm run build && cd .. && rm -rf public && mv billing-frontend/dist public"
+    "build": "npm install --prefix billing-frontend && npm run build --prefix billing-frontend && rm -rf public && mv billing-frontend/dist public"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1011.0",
